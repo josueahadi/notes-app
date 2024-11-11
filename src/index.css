@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Karla', sans-serif;
+}
+
+button:focus {
+  outline: none;
+}
+
+.no-notes {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+/* Sidebar and Notes */
+.pane {
+  overflow-y: auto;
+}
+
+.selected-note {
+  background-color: #4a4e74;
+  color: white;
+  font-weight: bold;
+}
+
+/* Markdown Editor Styling */
+.markdown-editor .w-md-editor-bar {
+  background-color: #4a4e74;
+  color: white;
+  font-weight: bolder;
+}
+
+
+.markdown-editor .w-md-editor-preview {
+  padding: 1rem;
+}
+
+.markdown-editor .w-md-editor-toolbar {
+  border-bottom: 1px solid #ddd;
+}
