@@ -1,5 +1,21 @@
-# React + TypeScript + Vite
+# Notes
+A simple and intuitive markdown-based note-taking application. Create, edit, and organize your notes with ease using markdown syntax.
 
+## Features
+- Markdown Editing: Write notes in markdown, with real-time preview.
+- Organize Notes: Easily create and switch between multiple notes.
+- Auto-save: Notes are automatically saved to local storage.
+- Responsive Design: Works seamlessly on desktops and tablets.
+- Rich Toolbar: Access markdown editing tools (bold, italic, links, lists, etc.) right from the toolbar.
+## Tech Stack
+- React with TypeScript
+- @uiw/react-md-editor for markdown editing
+- React Split for resizable panes
+- Tailwind CSS for styling
+- Local Storage for saving notes on the client-side
+
+
+## TL;DR
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

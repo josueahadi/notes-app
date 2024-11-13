@@ -71,7 +71,7 @@ export default function App() {
           <h1 className="mb-4 text-2xl font-bold">You have no notes</h1>
           <button
             onClick={createNewNote}
-            className="px-4 py-2 text-white transition bg-indigo-600 rounded-md hover:bg-indigo-500"
+            className="px-4 py-2 text-white transition bg-[#1b162f] rounded-md hover:bg-indigo-500"
           >
             Create one now
           </button>
