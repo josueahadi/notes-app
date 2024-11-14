@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 
 * {
   box-sizing: border-box;
@@ -51,4 +52,37 @@ button:focus {
 
 .markdown-editor .w-md-editor-toolbar {
   border-bottom: 1px solid #ddd;
+  height: 35px;
+}
+
+@media (max-width: 768px) {
+  .markdown-editor .w-md-editor-toolbar {
+    height: 70px;
+  }
+}
+
+/* .markdown-editor .w-md-editor-toolbar button {
+  font-size: 1.5rem;
+  padding: auto 0.5rem; 
+} */
+
+.markdown-editor .w-md-editor-toolbar button svg {
+  width: 0.9rem; 
+  height: 0.9rem;
+}
+
+/* Styles for the resizable gutter */
+.gutter {
+  background-color: #ddd;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: col-resize;
+}
+
+.gutter-horizontal {
+  width: 10px;
+}
+
+.gutter-horizontal:hover {
+  background-color: #bbb;
 }

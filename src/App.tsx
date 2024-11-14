@@ -55,6 +55,13 @@ export default function App() {
           direction="horizontal"
           className="flex w-full"
           style={{ height: "100vh" }}
+          gutterSize={10}
+          gutterAlign="center"
+          gutter={() => {
+            const gutter = document.createElement("div");
+            gutter.className = "gutter";
+            return gutter;
+          }}
         >
           <Sidebar
             notes={notes}

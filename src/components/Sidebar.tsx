@@ -19,12 +19,12 @@ const Sidebar: React.FC<SidebarProps> = ({
   newNote,
 }) => {
   return (
-    <div className="flex flex-col w-full h-full p-4 text-white bg-[#1b162f] md:w-1/4">
+    <div className="flex flex-col w-full h-full px-2   sm:px-4 py-4 text-white bg-[#1b162f] md:w-1/4">
       <div className="flex items-center justify-between mb-4">
-        <h3 className="text-2xl font-bold">Notes</h3>
+        <h3 className="text-lg font-bold sm:text-xl">Notes</h3>
         <button
           onClick={newNote}
-          className="flex items-center justify-center w-8 h-8 text-xl text-[#1b162f] bg-white rounded-full"
+          className="flex items-center justify-center w-6 sm:w-7 h-6 sm:h-7 text-xl text-[#1b162f] bg-white rounded-full"
         >
           +
         </button>
@@ -34,7 +34,7 @@ const Sidebar: React.FC<SidebarProps> = ({
           key={note.id}
           onClick={() => setCurrentNoteId(note.id)}
           className={`p-2 cursor-pointer rounded-md ${
-            note.id === currentNote?.id ? "bg-[#2a2541] font-bold" : ""
+            note.id === currentNote?.id ? "bg-[#2a2541] font-medium sm:font-semibold text-sm sm:text-sm" : ""
           }`}
         >
           Note {index + 1}
